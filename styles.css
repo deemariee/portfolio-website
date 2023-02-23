@@ -4,27 +4,39 @@
     box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    top: 70px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: #f6eee0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    background-color: #A45C40;
+
 }
 
 .logo {
     font-family: 'Taviraj', serif;
-    color: #000000;
+    color: #f4b7a0;
     letter-spacing: .2rem;
     cursor: pointer;
     font-size: 1.2em;
+    border: solid 1px;
+    padding: 10px;
 }
 
 span {
-    color: #A45C40
+    color: #f6eee0;
 }
 
 li {
@@ -41,15 +53,14 @@ ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #A45C40;
+    color: #f6eee0;
     
 }
 
 .hover {
     display: inline-block;
     position: relative;
-    color: #A45C40;
+    color: #f6eee0;
 }
 
 .hover::after {
@@ -60,7 +71,7 @@ nav ul li a {
     height: 2px;
     bottom:0;
     left:0;
-    background-color: #A45C40;
+    background-color: #f6eee0;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
@@ -69,4 +80,67 @@ nav ul li a {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+section {
+    height:100vh;
+    width: 100vw;
+}
+
+.hero {
+    background-color: #f6eee0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #A45C40;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.greeting {
+    font-size: 1.7em;
+    padding-bottom: 20px;
+}
+
+.introduction {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 0.9em;
+}
+
+.sub-intro {
+    font-size: 1.8em;
+    color: #f4b7a0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button {
+    border: solid 1px #A45C40;
+    background-color: #A45C40;
+    color: #f6eee0;
+    padding: 10px 20px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+    font-family: 'Khula', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    padding: 25px 0px;
+}
+
 
