@@ -191,16 +191,32 @@ a {
     width: 100%;
 }
 
+.task {
+    display: flex;
+    justify-content: center;
+}
+
+.task img {
+    height: 250px;
+    width: 250px;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+}
+
 .project-content h2 {
     font-size: 3em;
     text-align: center;
-    padding: 50px 0px;
+    padding: 25px 0px;
 }
 
-.task {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    place-items: center;
+.projects-intro {
+    text-align: center;
+    padding: 0px 100px;
 }
 
 /*CONTRIBUTIONS SECTION*/
@@ -218,6 +234,7 @@ a {
     height: 100vh;
     width: 100%;
 }
+
  /*FOOTER*/
 footer {
     background-color: #f4b7a0;
